@@ -1,5 +1,4 @@
 import { ThumbsUp } from 'lucide-react';
-import React from 'react'
 import { FiMessageCircle } from 'react-icons/fi';
 
 

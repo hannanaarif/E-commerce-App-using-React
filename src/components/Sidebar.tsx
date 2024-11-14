@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useFilter } from './FilterContext'
 
-interface product {
+interface Product {
     category:string
 }
 
@@ -19,7 +19,7 @@ const Sidebar = () => {
         setMinPrice,
         maxPrice,
         setMaxPrice,
-        keyword,
+       // keyword,
         setKeyword
 
     }=useFilter()
@@ -75,7 +75,7 @@ const Sidebar = () => {
     }
 
   return ( <div className='w-64 p-5 h-screen'>
-    <h1 className='text-2xl font-bold mb-10 mt-4'>Aamir InduSTries</h1>
+    <h1 className='text-2xl font-bold mb-10 mt-4'>React Store</h1>
     <section>
         <input type="text" className='border-2 rounded px-2 sm:mb-2' placeholder='Search Product' value={searchQuery} onChange={e=>setSearchQuery(e.target.value)}/>
         <div className='flex justify-center mt-3 items-center'>
